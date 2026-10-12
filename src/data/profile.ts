@@ -8,7 +8,7 @@ export type LinkItem = {
 export const profile = {
   name: "정개밣",
   bio: "풀스택 개발자 | 요즘에는 AI 개발에 관심이 많아요",
-  image: "https://placehold.co/150x150/orange/white",
+  image: "/profile.png",
 };
 
 // 링크 카드 목록. id는 클릭 수 집계 키로 쓰이므로 정한 뒤에는 바꾸지 마세요.

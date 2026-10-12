@@ -15,8 +15,6 @@ export default function Profile({ name, bio, image }: ProfileProps) {
         width={150}
         height={150}
         priority
-        // placehold.co는 SVG를 반환하므로 Next 이미지 최적화를 거치지 않음
-        unoptimized
         className="h-28 w-28 rounded-full border-2 border-emerald-500 object-cover"
       />
       <h1 className="mt-4 text-xl font-bold">{name}</h1>
