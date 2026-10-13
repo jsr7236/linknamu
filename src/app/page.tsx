@@ -1,4 +1,4 @@
-import LinkCard from "@/components/LinkCard";
+import LinkList from "@/components/LinkList";
 import Profile from "@/components/Profile";
 import ThemeToggle from "@/components/ThemeToggle";
 import { links, profile } from "@/data/profile";
@@ -14,13 +14,7 @@ export default function Home() {
         <Profile {...profile} />
       </div>
 
-      <ul className="mt-8 flex flex-col gap-4">
-        {links.map((link) => (
-          <li key={link.id}>
-            <LinkCard link={link} />
-          </li>
-        ))}
-      </ul>
+      <LinkList links={links} />
 
       <footer className="mt-auto pt-10 text-center text-xs text-neutral-400">링크나무</footer>
     </main>
